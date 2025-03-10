@@ -82,7 +82,7 @@
 #define GEAR_RATIO 22 //dummy for testing 11
 #define SPEEDLIMIT 25
 #define PULSES_PER_REVOLUTION 6
-#define REVERSE 1
+#define REVERSE -1
 #define SPEEDFILTER 1
 #define SPEEDSOURCE INTERNAL
 
@@ -100,10 +100,10 @@
 
 //----------------------------- Display setting
 
-#define DISPLAY_TYPE DISPLAY_TYPE_DEBUG //DISPLAY_TYPE_KINGMETER_901U
+#define DISPLAY_TYPE DISPLAY_TYPE_KINGMETER_901U
 
 //------------------------------Autodetect setting
-#define AUTODETECT 1
+#define AUTODETECT 0
 
 
 
