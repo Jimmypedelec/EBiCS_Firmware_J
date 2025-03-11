@@ -63,8 +63,8 @@
 
 //------------------------------ Ride mode setting
 #define NUMBER_OF_PAS_MAGNETS 12
-#define PAS_TIMEOUT 5000
-#define RAMP_END 1600
+#define PAS_TIMEOUT 3000
+#define RAMP_END 1200
 //#define DIRDET
 #define FRAC_HIGH 30
 #define FRAC_LOW 15
@@ -73,7 +73,7 @@
 //#define TQONAD1
 
 //------------------------------Throttle settings
-#define THROTTLE_OFFSET 1500
+#define THROTTLE_OFFSET 1250
 #define THROTTLE_MAX 2600
 #define THROTTLE_OVERRIDE
 
