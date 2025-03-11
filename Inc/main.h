@@ -76,7 +76,7 @@
 //#define BRAKE_LIGHT_Pin GPIO_PIN_10
 //#define BRAKE_LIGHT_GPIO_Port GPIOB
 #define S1_S2_Brake_Pin GPIO_PIN_15  //11 bei alten modellen
-#define S1_S2_Brake_GPIO_Port GPIOC
+#define S1_S2_Brake_GPIO_Port GPIOA
 #define B_Speed_Pin GPIO_PIN_0
 #define B_Speed_GPIO_Port GPIOD
 #define _1_1_PAS_Pin GPIO_PIN_1
