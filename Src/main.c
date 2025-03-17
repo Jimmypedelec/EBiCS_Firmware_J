@@ -188,7 +188,7 @@ int16_t i16_sinus=0;
 int16_t i16_cosinus=0;
 char buffer[100];
 char char_dyn_adc_state_old=1;
-const uint8_t assist_factor[10]={0, 15, 50, 128, 204, 255, 255, 255, 255, 255};
+const uint8_t assist_factor[10]={0, 15, 15, 50, 50, 102, 102, 255, 255, 255};
 const uint8_t assist_profile[2][6]= {	{0,10,20,30,45,48},
 										{64,64,128,200,255,0}};
 
