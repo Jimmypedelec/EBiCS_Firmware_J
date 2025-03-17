@@ -794,7 +794,7 @@ int main(void)
 #if (RIDEMODE == RIDEMODE_PAS)
 
 #if (DISPLAY_TYPE == DISPLAY_TYPE_KINGMETER_901U)
-				uint16_mapped_PAS = map(uint32_PAS, RAMP_END, PAS_TIMEOUT, ((PH_CURRENT_MAX*(int32_t)(assist_factor[MS.assist_level/51])))>>8, 0); // Teiler zum Versuch 20 31 51  level in range 0...255
+				uint16_mapped_PAS = map(uint32_PAS, RAMP_END, PAS_TIMEOUT, ((PH_CURRENT_MAX*(int32_t)(assist_factor[MS.assist_level/20])))>>8, 0); // Teiler zum Versuch 20 31 51  level in range 0...255
 				if(uint32_PAS_counter>PAS_TIMEOUT)int32_temp_current_target=0;
 				else int32_temp_current_target = uint16_mapped_PAS;
 #endif
@@ -2167,7 +2167,7 @@ void autodetect() {
 	MS.hall_angle_detect_flag = 0; //set uq to contstant value in FOC.c for open loop control
 	q31_rotorposition_absolute = 1 << 31;
 	i16_hall_order = 1;//reset hall order
-	MS.i_d_setpoint= 300; //set MS.id to appr. 2000mA war 50imJYT
+	MS.i_d_setpoint= 500; //set MS.id to appr. 2000mA war 50imJYT
 	MS.i_q_setpoint= 0;
 //	uint8_t zerocrossing = 0;
 //	q31_t diffangle = 0;
