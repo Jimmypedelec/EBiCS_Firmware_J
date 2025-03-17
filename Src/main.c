@@ -188,7 +188,7 @@ int16_t i16_sinus=0;
 int16_t i16_cosinus=0;
 char buffer[100];
 char char_dyn_adc_state_old=1;
-const uint8_t assist_factor[10]={0, 51, 102, 153, 204, 255, 255, 255, 255, 255};
+const uint8_t assist_factor[10]={0, 15, 50, 128, 204, 255, 255, 255, 255, 255};
 const uint8_t assist_profile[2][6]= {	{0,10,20,30,45,48},
 										{64,64,128,200,255,0}};
 
@@ -794,7 +794,7 @@ int main(void)
 #if (RIDEMODE == RIDEMODE_PAS)
 
 #if (DISPLAY_TYPE == DISPLAY_TYPE_KINGMETER_901U)
-				uint16_mapped_PAS = map(uint32_PAS, RAMP_END, PAS_TIMEOUT, ((PH_CURRENT_MAX*(int32_t)(assist_factor[MS.assist_level/41])))>>8, 0); // Teiler zum Versuch 20 31 51  level in range 0...255
+				uint16_mapped_PAS = map(uint32_PAS, RAMP_END, PAS_TIMEOUT, ((PH_CURRENT_MAX*(int32_t)(assist_factor[MS.assist_level/28])))>>8, 0); // Teiler zum Versuch 20 31 51  level in range 0...255
 				if(uint32_PAS_counter>PAS_TIMEOUT)int32_temp_current_target=0;
 				else int32_temp_current_target = uint16_mapped_PAS;
 #endif
