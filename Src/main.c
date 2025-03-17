@@ -794,7 +794,7 @@ int main(void)
 #if (RIDEMODE == RIDEMODE_PAS)
 
 #if (DISPLAY_TYPE == DISPLAY_TYPE_KINGMETER_901U)
-				uint16_mapped_PAS = map(uint32_PAS, RAMP_END, PAS_TIMEOUT, ((PH_CURRENT_MAX*(int32_t)(assist_factor[MS.assist_level/28])))>>8, 0); // Teiler zum Versuch 20 31 51  level in range 0...255
+				uint16_mapped_PAS = map(uint32_PAS, RAMP_END, PAS_TIMEOUT, ((PH_CURRENT_MAX*(int32_t)(assist_factor[MS.assist_level/42])))>>8, 0); // Teiler zum Versuch 20 31 51  level in range 0...255
 				if(uint32_PAS_counter>PAS_TIMEOUT)int32_temp_current_target=0;
 				else int32_temp_current_target = uint16_mapped_PAS;
 #endif
