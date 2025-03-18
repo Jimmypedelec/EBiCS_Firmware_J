@@ -188,7 +188,7 @@ int16_t i16_sinus=0;
 int16_t i16_cosinus=0;
 char buffer[100];
 char char_dyn_adc_state_old=1;
-const uint8_t assist_factor[10]={0, 10, 30, 80, 190, 255, 255, 255, 255, 255};
+const uint8_t assist_factor[10]={0, 10, 40, 90, 190, 255, 255, 255, 255, 255};
 const uint8_t assist_profile[2][6]= {	{0,10,20,30,45,48},
 										{64,64,128,200,255,0}};
 
@@ -2167,7 +2167,7 @@ void autodetect() {
 	MS.hall_angle_detect_flag = 0; //set uq to contstant value in FOC.c for open loop control
 	q31_rotorposition_absolute = 1 << 31;
 	i16_hall_order = 1;//reset hall order
-	MS.i_d_setpoint= 1000; //set MS.id to appr. 2000mA war 50imJYT
+	MS.i_d_setpoint= 600; //set MS.id to appr. 2000mA war 50imJYT
 	MS.i_q_setpoint= 0;
 //	uint8_t zerocrossing = 0;
 //	q31_t diffangle = 0;
