@@ -28,7 +28,7 @@
 #define _T 2028
 #define CAL_BAT_V 256
 #define CAL_V 25
-#define CAL_I 38LL<<8  //vorher 30LL<<8
+#define CAL_I 30LL<<8  //vorher 30LL<<8
 #define INDUCTANCE 6LL
 #define RESISTANCE 40LL
 #define FLUX_LINKAGE 1200LL
@@ -89,7 +89,7 @@
 
 
 //----------------------------- Power settings
-#define PH_CURRENT_MAX 300  //vorher 900
+#define PH_CURRENT_MAX 600  //vorher 900
 #define BATTERYCURRENT_MAX 15000
 #define BATTERYCURRENT_OFFSET 924
 //#define ADC_BRAKE
